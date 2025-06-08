@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15" version="27.1.4">
+  <diagram name="F1 Data Insights Dashboard 架構" id="sKK5pHOvk9GpH0P4ipE0">
+    <mxGraphModel dx="1018" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0-MnNBTRrUz40i_EMaER-1" value="使用者" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="250" y="20" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0-MnNBTRrUz40i_EMaER-2" value="前端（React）&#xa;- 賽曆列表頁&#xa;- 地圖檢視頁&#xa;- 分站詳情頁&#xa;- 比較分析組件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="90" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="0-MnNBTRrUz40i_EMaER-3" value="後端（Express）&#xa;- 賽事/車手 API&#xa;- 比較分析 API&#xa;- 資料查詢&#xa;- 排程任務" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="220" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="0-MnNBTRrUz40i_EMaER-4" value="MariaDB 資料庫&#xa;- 賽事資料表&#xa;- 車手資料表&#xa;- 圈速/進站表" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="360" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="0-MnNBTRrUz40i_EMaER-5" value="Ergast API&#xa;(REST)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="500" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0-MnNBTRrUz40i_EMaER-6" value="FastF1 ETL&#xa;(Python同步)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0-MnNBTRrUz40i_EMaER-7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="0-MnNBTRrUz40i_EMaER-1" target="0-MnNBTRrUz40i_EMaER-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0-MnNBTRrUz40i_EMaER-8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="0-MnNBTRrUz40i_EMaER-2" target="0-MnNBTRrUz40i_EMaER-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0-MnNBTRrUz40i_EMaER-9" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="0-MnNBTRrUz40i_EMaER-3" target="0-MnNBTRrUz40i_EMaER-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0-MnNBTRrUz40i_EMaER-10" value="定時同步" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#F00;" edge="1" parent="1" source="0-MnNBTRrUz40i_EMaER-5" target="0-MnNBTRrUz40i_EMaER-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0-MnNBTRrUz40i_EMaER-11" value="定時同步" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#F0F;" edge="1" parent="1" source="0-MnNBTRrUz40i_EMaER-6" target="0-MnNBTRrUz40i_EMaER-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
